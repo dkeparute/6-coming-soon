@@ -1,3 +1,4 @@
+/* islaizys visas css detales ko nebus islaize kiti css stiliai */
 /* base */
 @import './base/layout.css';
 @import './base/reset.css';
@@ -13,3 +14,7 @@
 @import './components/progress-bar.css';
 
 /* custom style below this coment line */
+
+body {
+    background-color: aqua;
+}
