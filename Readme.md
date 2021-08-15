@@ -21,10 +21,6 @@ Design: [Coming-soon](https://cdn.discordapp.com/attachments/850245533838868480/
 - Repetetive content is generated/rendered
 - CSS animations
 - NodeJs
->>>>>>> Stashed changes
-
-
-
 ## Authors
 Student | Description
 ------- | -----------
