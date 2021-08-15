@@ -1,12 +1,17 @@
 /* islaizys visas css detales ko nebus islaize kiti css stiliai */
+
+
 /* base */
+
 @import './base/layout.css';
 @import './base/reset.css';
 @import './base/variables.css';
 
 /* 3rd-party */
 
+
 /* components */
+
 @import './components/button.css/';
 @import './components/clock.css';
 @import './components/form.css';
@@ -14,9 +19,54 @@
 @import './components/progress-bar.css';
 
 /* custom style below this coment line */
+
 .bg-primary {
     background-color: var(--primary-color);
 }
+
 .bg-secondary {
     background-color: var(--secondary-color);
 }
+
+
+/* hero content */
+
+.hero {
+    min-height: 100vh;
+    text-align: center;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero .logo {
+    height: 70px;
+    margin-bottom: 40px;
+}
+
+.hero .main-title {
+    margin-bottom: 20px;
+    font-size: 90px;
+    text-transform: uppercase;
+}
+
+.hero .main-description {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.hero .clock {
+    margin-bottom: 40px;
+}
+
+.hero .form {
+    margin-bottom: 20px;
+}
+
+
+/* main content */
+
+
+/* footer section */
