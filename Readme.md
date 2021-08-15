@@ -17,11 +17,6 @@ Design: [Coming-soon](https://cdn.discordapp.com/attachments/850245533838868480/
 
 
 ## Homework Objectives
-
-<<<<<<< Updated upstream
-- Github pages
-- Desktop only
-=======
 - Responsive design
 - Repetetive content is generated/rendered
 - CSS animations
