@@ -14,7 +14,9 @@
 @import './components/progress-bar.css';
 
 /* custom style below this coment line */
-
-body {
-    background-color: aqua;
+.bg-primary {
+    background-color: var(--primary-color);
+}
+.bg-secondary {
+    background-color: var(--secondary-color);
 }
