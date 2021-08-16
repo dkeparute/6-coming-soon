@@ -68,5 +68,47 @@
 
 /* main content */
 
+main .left-column {
+    width: 50%;
+    float: left;
+}
+
+main .right-column {
+    width: 40%;
+    float: right;
+}
+
+main .section-title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+main .section-description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+main .section-description>a {
+    color: var(--secondary-color);
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: none;
+}
+
+main .section-description>a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    main .left-column {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    main .right-column {
+        width: 100%;
+    }
+}
+
 
 /* footer section */
