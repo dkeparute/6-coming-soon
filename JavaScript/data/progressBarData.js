@@ -11,9 +11,5 @@ const progressBarData = [
         label:"Web Development",
         value: 86,
     },
-    {
-        label: "Web Errors",
-        value: 5,
-    },
 ];
 export { progressBarData }
