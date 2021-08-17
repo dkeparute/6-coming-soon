@@ -2,6 +2,8 @@ class ProgressBars {
     constructor(selector, data) {
         this.selector = selector;
         this.data = data;
+
+        this.render();
     }
     render() {
 
