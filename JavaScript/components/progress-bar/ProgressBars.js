@@ -32,34 +32,69 @@ class ProgressBars {
     }
     findTargetElement() {
         this.DOM = document.querySelector(this.selector);
-        return this.DOM ? true: false;
+        return this.DOM ? true : false;
         // cia yra lygiai tas pats kas vienoje eiluteje parasyta:
         // if (this.DOM) {
         //     return true;
         // } else {
         //     return false;
         // }
-        
+
+    }
+    isValidDataItem(item) {
+        const allowedKeys = ['label', 'value'];
+
+        // tikriname, jog item yra objektas
+        if (typeof item !== 'object' || Array.isArray(item) || item == null) {
+            console.warn('WARNING: netinkamas tipas');
+            return false;
+        }
+        // tikriname, ar item.label yra tinkamas
+        if (typeof item.label !== 'string' || item.label === '') {
+            console.warn('WARNING: netinkamas item.label');
+            return fale;
+        }
+        // tikriname, ar item.value yra tinkamas
+        if (typeof item.value !== 'number' || isFinite(item.value) || item.value < 0 || item.value > 100) {
+            console.warn('WARNING: netinkamas item.value');
+        }
+        // tikriname, ar item objektas neturi per daug key's (raktazodziu)
+        for (const key in item) {
+            if (allowedKeys.includes(key)) {
+                return false;
+            }
+        }
+        return true;
     }
     render() {
 
         let HTML = '';
-
-        for (let i = 0; i < this.data.length; i++) {
-            const item = this.data[i];
+        // for (let i = 0; i < this.data.length; i++) {
+        //     const item = this.data[i]; alternatyva
+        for (const item of this.data) {
+            if (this.isValidDataItem()) {
+                continue;
+            }
 
             HTML += `<div class="progress-bar">
-                        <div class="top">
-                            <div class="label">${item.label}</div>
-                            <div class="value">${item.value}%</div>
-                        </div>
-                        <div class="bottom">
-                            <div class="progress" style="width: ${item.value}%;"></div>
-                        </div>
-                    </div>`;
+            <div class="top">
+                <div class="label">${item.label}</div>
+                <div class="value">${item.value}%</div>
+            </div>
+            <div class="bottom">
+                <div class="progress" style="width: ${item.value}%;"></div>
+            </div>
+        </div>`;
+        }
+        if (HTML === '') {
+            console.error('ERROR: this.data neturi nei vienos validzios reiksmes');
+            return false;
+
         }
         this.DOM.innerHTML += HTML;
+
     }
+
 }
 
 export { ProgressBars }
