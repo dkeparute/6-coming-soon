@@ -6,7 +6,11 @@ class ProgressBars {
         this.init();
     }
     init() {
-        if (!this.isValidSelector() || !this.isValidData() || !this.findTargetEelement()) {
+        if (!this.isValidSelector() || !this.isValidData()) {
+            return false;
+        }
+        if (!this.findTargetElement()) {
+            console.error('ERROR: pagal pateikta this.selector nepavyko rasti norimo elemento');
             return false;
         }
         this.render();
@@ -26,13 +30,16 @@ class ProgressBars {
         }
         return true;
     }
-    findTargetEelement() {
+    findTargetElement() {
         this.DOM = document.querySelector(this.selector);
-        if (!this.DOM) {
-            console.error('ERROR: pagal pateikta this.selector nepavyko rasti norimo elemento');
-            return false;
-        }
-        return true;
+        return this.DOM ? true: false;
+        // cia yra lygiai tas pats kas vienoje eiluteje parasyta:
+        // if (this.DOM) {
+        //     return true;
+        // } else {
+        //     return false;
+        // }
+        
     }
     render() {
 
