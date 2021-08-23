@@ -28,6 +28,22 @@
 
 .progress-bar>.bottom>.progress {
     width: 90%;
-    background-color: cornflowerblue;
     height: 100%;
+}
+
+.progress-bar>.bottom>.progress>.bar {
+    width: 100%;
+    height: 100%;
+    background-color: cornflowerblue;
+    animation-name: loading;
+    animation-duration: 2s;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
