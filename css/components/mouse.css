@@ -1,0 +1,40 @@
+.mouse {
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    position: relative;
+    /* transform: scale(0.2); */
+}
+
+.mouse::before {
+    content: '';
+    background-color: #fff;
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes scroll {
+    0% {
+        top: 5px;
+        background-color: #fff;
+        opacity: 1;
+    }
+    100% {
+        top: 20px;
+        background-color: #fff;
+        opacity: 0;
+    }
+}
