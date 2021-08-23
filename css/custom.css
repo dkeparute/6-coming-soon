@@ -125,6 +125,7 @@ footer.container {
 .socials {
     padding: 15px 0;
     border-bottom: 1px solid #fff;
+    position: relative;
 }
 
 .socials>a {
@@ -141,6 +142,20 @@ footer.container {
 .socials>a:hover {
     background-color: #fff;
     color: var(--primary-color);
+}
+
+footer .back-to-top {
+    background-color: var(--secondary-color);
+    color: #fff;
+    position: absolute;
+    top: -25px;
+    right: -14px;
+    margin: 0;
+}
+
+footer .back-to-top:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
 .footer-logo {

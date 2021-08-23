@@ -40,7 +40,7 @@ class Socials {
             HTML += `<a href="${item.href}" target="_blank" class="fa fa-${item.icon}"></a>`;
 
         }
-        this.DOM.innerHTML = HTML;
+        this.DOM.innerHTML += HTML;
     }
 }
 export { Socials }
