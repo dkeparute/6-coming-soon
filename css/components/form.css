@@ -1,0 +1,56 @@
+.form {
+    display: inline-block;
+    width: 100%;
+    color: #777;
+}
+
+.form>input {
+    float: left;
+    width: 45%;
+    margin-bottom: 30px;
+    line-height: 36px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.form>input:focus-visible {
+    outline: none;
+}
+
+.form>input+input {
+    margin-left: 10%;
+}
+
+.form>textarea {
+    display: inline-block;
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    margin-bottom: 30px;
+    border: none;
+    line-height: 25px;
+    font-size: 18px;
+    border-bottom: 2px solid #ccc;
+    resize: vertical;
+}
+
+.form textarea:focus-visible {
+    outline: none;
+}
+
+.form>.button {
+    display: inline-block;
+    float: right;
+    padding: 10px 30px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    line-height: 20px;
+}
+
+.form>.button:hover {
+    cursor: pointer;
+    border-radius: 60px;
+}
