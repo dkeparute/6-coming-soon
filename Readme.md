@@ -9,8 +9,7 @@
 This is one of the projects that we are making during the Javascript trainings. 
 This project performed for educational porpuses only.
 
-Site published at:dkeparute.github.io/6-coming-soon/
-
+Site published at: dkeparute.github.io/6-coming-soon/
 Design: [Coming-soon](https://cdn.discordapp.com/attachments/850245533838868480/850246473362178048/coming-soon-wide.png)
 
 ![Coming-soon](https://cdn.discordapp.com/attachments/850245533838868480/850246473362178048/coming-soon-wide.png)
