@@ -40,7 +40,6 @@
 }
 
 .form>.button {
-    display: inline-block;
     float: right;
     padding: 10px 30px;
     background-color: var(--secondary-color);
