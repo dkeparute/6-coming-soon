@@ -13,6 +13,7 @@
 
 /* components */
 
+@import './components/subscribe.css';
 @import './components/clock.css';
 @import './components/form.css';
 @import './components/mouse.css';
@@ -32,7 +33,7 @@
 /* hero content */
 
 .hero {
-    min-height: 100vh;
+    min-height: 40vh;
     text-align: center;
     background-image: url(../img/background.jpg);
     background-size: cover;
@@ -63,6 +64,11 @@
 
 .hero .form {
     margin-bottom: 20px;
+}
+
+.hero.form>input {
+    display: inline-block;
+    width: 100%;
 }
 
 
