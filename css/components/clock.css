@@ -1,13 +1,11 @@
-.clock {
+.hero>.clock {
+    color: #fff;
     display: inline-block;
     width: 100%;
-    color: #fff;
 }
 
 .clock>.time {
-    width: 25%;
-    float: left;
-    margin: 10px 0;
+    display: inline-block;
 }
 
 .clock>.time>.value {

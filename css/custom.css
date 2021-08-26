@@ -13,7 +13,6 @@
 
 /* components */
 
-@import './components/button.css/';
 @import './components/clock.css';
 @import './components/form.css';
 @import './components/mouse.css';
@@ -88,6 +87,7 @@ main .section-description {
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 22px;
+    text-align: left;
 }
 
 main .section-description>a {
@@ -167,10 +167,6 @@ footer .back-to-top:hover {
     justify-content: center;
     gap: 0 20px;
 }
-
-.footer-trio>.item {}
-
-.footer-description {}
 
 footer a {
     color: #fff;
