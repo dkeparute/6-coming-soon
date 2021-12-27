@@ -13,7 +13,7 @@ This project performed for educational porpuses only.
 Design: [Coming-soon](https://cdn.discordapp.com/attachments/850245533838868480/850246473362178048/coming-soon-wide.png)
 
 ![Coming-soon](https://cdn.discordapp.com/attachments/850245533838868480/850246473362178048/coming-soon-wide.png)
-Site published at: dkeparute.github.io/6-coming-soon/
+Site published at: https://dkeparute.github.io/Coming-soon/
 
 
 ## Homework Objectives
